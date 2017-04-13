@@ -8,8 +8,8 @@ function addNumber(event) {
     inputs.push(number);
     sum += number;
     avg = sum/inputs.length;
-    document.getElementById("count").innerHTML = inputs.length;
-    document.getElementById("sum").innerHTML = sum;
+    document.getElementById("counting").innerHTML = inputs.length;
+    document.getElementById("sums").innerHTML = sum;
     document.getElementById("avg").innerHTML = avg;
     console.log(inputs);
     console.log(sum);
