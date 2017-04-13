@@ -1,12 +1,12 @@
 var inputs = [];
 var sum = 0;
 var avg = 0;
-function addNumber(event) {
-  var formNumber = document.mathForm.formNumber.value;
-  var number = Number(formNumber);
-  if(!isNaN(number))  {
-    inputs.push(number);
-    sum += number;
+function addNumbers(event) {
+  var formNumbers = document.mathForm.formNumbers.value;
+  var numbers = Number(formNumbers);
+  if(!isNaN(numbers))  {
+    inputs.push(numbers);
+    sum += numbers;
     avg = sum/inputs.length;
     document.getElementById("counting").innerHTML = inputs.length;
     document.getElementById("sums").innerHTML = sum;
